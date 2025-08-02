@@ -3,20 +3,6 @@
 
 #include <Arduino.h>
 
-// ===================== KHAI BÁO BIẾN =====================
-extern hw_timer_t* buzzerTimer;
-extern portMUX_TYPE buzzerMux;
-
-extern volatile uint8_t buzzerPattern;
-extern volatile int8_t bitIndex;
-extern volatile uint32_t buzzerIntervalUs;
-extern volatile bool buzzerIsBusy;
-
-extern uint8_t BUZZER_PIN;
-extern bool buzzerInitialized;
-
-// ===================== HÀM GỌI TỪ NGOÀI =====================
-
 /**
  * @brief Khởi tạo buzzer và timer hardware.
  * 
